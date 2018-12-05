@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        
+        <a-box color="tomato" width="1" height="1.5" depth="2"
+               >
+            <a-animation attribute="rotation"
+                         dur="4000"
+                         fill="backwards"
+                         to="0 360 0"
+                         repeat="indefinite"></a-animation>
+            <a-animation attribute="position"
+                         dur="4000"
+                         fill="forwards"
+                         from='-5 0 0'
+                         to="5 0 0"
+                         repeat="indefinite"></a-animation>
+            <a-animation attribute="material.color" from="#A6F1F1" to="#BD6E90" dur="3000"  repeat="indefinite" ></a-animation>
+        </a-box>
+        
+        <a-sky color="#737171"></a-sky>
+        
+        <a-camera position="0 0 3" user-height="0">
+        </a-camera>
+        
+        
+      </a-scene>
+
+  </body>
+</html>
